@@ -1,0 +1,23 @@
+
+img.pad {
+  /*padding-top: 10px;*/
+  padding-bottom: 10px;
+}
+div.pad {
+  /*padding-top: 10px;*/
+  padding-bottom: 10px;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.label-light {
+  background-color: #FFF;
+  color: #666;
+}
+
+.label-pad-left {
+  margin-left: 5px;
+}
