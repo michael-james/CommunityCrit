@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- <link rel="icon" href="http://getbootstrap.com/favicon.ico"> -->
+    <link rel="icon" href="assets/favicon-32x32.ico">
 
     <title>Structured Feedback - CommunityCrit</title>
 
@@ -80,6 +80,8 @@
               <ul class="dropdown-menu">
                 <li><a href="#principle-based">Principle Based</a></li>
                 <li><a href="#statement-based">Statement Based</a></li>
+                <li><a href="#value-based">Value Based</a></li>
+                <li><a href="#theme-based">Theme Based</a></li>
                 <!-- <li><a href="condGMO.htm">Micro-Task Open</a></li> -->
                 <!-- <li><a href="condGMC.htm">Micro-Task Closed</a></li> -->
               </ul>
@@ -127,6 +129,10 @@
 
           <form>
             <h4>Share Your Thoughts</h4>
+
+            <p><i>Four options for structured feedback.</i></p>
+
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 <!--             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
               <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
@@ -138,234 +144,255 @@
 
             <!-- Structured Feedback: Principle Based -->
 
-            <div class="panel panel-default" id="principle-based">
-              <div class="panel-heading">
-                <h3 class="panel-title">Principle Based</h3>
+              <div class="panel panel-default" id="principle-based">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Principle Based</a>
+                  </h3>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="princple2">How well does this aspect <a data-toggle="tooltip" title="Develop transit areas that incorporate a variety of uses and activities including transit modes, pedestrian and bicyclist needs, open-space and public amenities.">develop inviting + accessible transit areas</a>?</label>
+                      <div id="princple2">
+                        <label class="radio-inline"><input type="radio" name="principle1" value="1">Poor</label>
+                        <label class="radio-inline"><input type="radio" name="principle1" value="2">Fair</label>
+                        <label class="radio-inline"><input type="radio" name="principle1" value="3">Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle1" value="4">Very Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle1" value="5">Excellent</label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="3" id="p1-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="princple2">How well does this aspect <a data-toggle="tooltip" title="The creation of simple connections within neighborhoods and throughout the city provides increased accessibility for pedestrians, bicyclists, transit riders and drivers.">ensure connections</a>?</label>
+                      <div id="princple2">
+                        <label class="radio-inline"><input type="radio" name="principle2" value="1">Poor</label>
+                        <label class="radio-inline"><input type="radio" name="principle2" value="2">Fair</label>
+                        <label class="radio-inline"><input type="radio" name="principle2" value="3">Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle2" value="4">Very Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle2" value="5">Excellent</label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="3" id="p2-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="princple2">How well does this aspect <a data-toggle="tooltip" title="Design streets to incorporate elements that enhance human scale, embrace neighborhood character, provide green infrastructure and balance needs for many modes of sustainable transit, including pedestrians, bicyclists, automobiles and transit.">produce great, green streets</a>?</label>
+                      <div id="princple2">
+                        <label class="radio-inline"><input type="radio" name="principle3" value="1">Poor</label>
+                        <label class="radio-inline"><input type="radio" name="principle3" value="2">Fair</label>
+                        <label class="radio-inline"><input type="radio" name="principle3" value="3">Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle3" value="4">Very Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle3" value="5">Excellent</label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="3" id="p3-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
+                    </div>
+
+                    Urban Design Principles (City of Los Angeles, 2011)
+                    <ol>
+                      <li>develop inviting + accessible transit areas</li>
+                      <li>ensure connections</li>
+                      <li>produce great, green streets</li>
+                      <li>generate public open space</li>
+                      <li>reinforce walkability, bikeability + wellbeing</li>
+                      <li>bridge the past + the future</li>
+                      <li>nurture neighborhood character</li>
+                      <li>stimulate sustainability + innovation</li>
+                      <li>improve equity + opportunity</li>
+                      <li>emphasize early integration, simple processes + maintainable long term solutions</li>
+                    </ol>
+                  </div>
+                </div>
               </div>
-              <div class="panel-body">
-                <div class="form-group">
-                  <label for="princple2">How well does this aspect <span class="text-primary">develop inviting + accessible transit areas</span>?</label>
-                  <div id="princple2">
-                    <label class="radio-inline"><input type="radio" name="principle1" value="1">Poor</label>
-                    <label class="radio-inline"><input type="radio" name="principle1" value="2">Fair</label>
-                    <label class="radio-inline"><input type="radio" name="principle1" value="3">Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle1" value="4">Very Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle1" value="5">Excellent</label>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" rows="3" id="p1-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
+
+              <!-- Structured Feedback: Statements Based -->
+
+              <div class="panel panel-default" id="statement-based">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Statement Based</a>
+                  </h3>
                 </div>
 
-                <div class="form-group">
-                  <label for="princple2">How well does this aspect <span class="text-primary">ensure connections</span>?</label>
-                  <div id="princple2">
-                    <label class="radio-inline"><input type="radio" name="principle2" value="1">Poor</label>
-                    <label class="radio-inline"><input type="radio" name="principle2" value="2">Fair</label>
-                    <label class="radio-inline"><input type="radio" name="principle2" value="3">Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle2" value="4">Very Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle2" value="5">Excellent</label>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label>Respond to each statement below.</label>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="s1-comment">I like this aspect because...</label>
+                      <textarea class="form-control" rows="3" id="s1-comment"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="s1-comment">I wish this aspect...</label>
+                      <textarea class="form-control" rows="3" id="s2-comment"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="s1-comment">Here's how this aspect could...</label>
+                      <textarea class="form-control" rows="3" id="s3-comment"></textarea>
+                    </div>
                   </div>
                 </div>
-                <div class="form-group">
-                  <textarea class="form-control" rows="3" id="p2-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
+              </div>
+
+              <!-- Structured Feedback: Value Based -->
+
+              <div class="panel panel-default" id="value-based">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Value Based</a>
+                  </h3>
                 </div>
 
-                <div class="form-group">
-                  <label for="princple2">How well does this aspect <span class="text-primary">produce great, green streets</span>?</label>
-                  <div id="princple2">
-                    <label class="radio-inline"><input type="radio" name="principle3" value="1">Poor</label>
-                    <label class="radio-inline"><input type="radio" name="principle3" value="2">Fair</label>
-                    <label class="radio-inline"><input type="radio" name="principle3" value="3">Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle3" value="4">Very Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle3" value="5">Excellent</label>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="princple2">How <u>fair</u> is this aspect?</label>
+                      <div id="princple2">
+                        <label class="radio-inline"><input type="radio" name="principle1" value="1">Poor</label>
+                        <label class="radio-inline"><input type="radio" name="principle1" value="2">Fair</label>
+                        <label class="radio-inline"><input type="radio" name="principle1" value="3">Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle1" value="4">Very Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle1" value="5">Excellent</label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="3" id="p1-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="princple2">How <u>useful</u> is this aspect?</label>
+                      <div id="princple2">
+                        <label class="radio-inline"><input type="radio" name="principle2" value="1">Poor</label>
+                        <label class="radio-inline"><input type="radio" name="principle2" value="2">Fair</label>
+                        <label class="radio-inline"><input type="radio" name="principle2" value="3">Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle2" value="4">Very Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle2" value="5">Excellent</label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="3" id="p2-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="princple2">How <u>harmful</u> is this aspect?</label>
+                      <div id="princple2">
+                        <label class="radio-inline"><input type="radio" name="principle3" value="1">Poor</label>
+                        <label class="radio-inline"><input type="radio" name="principle3" value="2">Fair</label>
+                        <label class="radio-inline"><input type="radio" name="principle3" value="3">Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle3" value="4">Very Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle3" value="5">Excellent</label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="3" id="p3-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
+                    </div>
                   </div>
                 </div>
-                <div class="form-group">
-                  <textarea class="form-control" rows="3" id="p3-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
+              </div>
+
+              <!-- Structured Feedback: Theme Based -->
+
+              <div class="panel panel-default" id="theme-based">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Theme Based</a>
+                  </h3>
+                </div>
+
+                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label for="princple2">How well does this aspect support <a data-toggle="tooltip" title="the street's influence on pedestrians, bicyclists, transit riders and drivers">transportation</a>?</label>
+                      <div id="princple2">
+                        <label class="radio-inline"><input type="radio" name="principle1" value="1">Poor</label>
+                        <label class="radio-inline"><input type="radio" name="principle1" value="2">Fair</label>
+                        <label class="radio-inline"><input type="radio" name="principle1" value="3">Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle1" value="4">Very Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle1" value="5">Excellent</label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="3" id="p1-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="princple2">How well does this aspect support <a data-toggle="tooltip" title="the role the street plays in bridging between East Village and Barrio Logan">connecting neighborhoods</a>?</label>
+                      <div id="princple2">
+                        <label class="radio-inline"><input type="radio" name="principle2" value="1">Poor</label>
+                        <label class="radio-inline"><input type="radio" name="principle2" value="2">Fair</label>
+                        <label class="radio-inline"><input type="radio" name="principle2" value="3">Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle2" value="4">Very Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle2" value="5">Excellent</label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="3" id="p2-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="princple2">How well does this aspect support <a data-toggle="tooltip" title="the opportunities the street provides to engage with the space and each other">activity engagement</a>?</label>
+                      <div id="princple2">
+                        <label class="radio-inline"><input type="radio" name="principle3" value="1">Poor</label>
+                        <label class="radio-inline"><input type="radio" name="principle3" value="2">Fair</label>
+                        <label class="radio-inline"><input type="radio" name="principle3" value="3">Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle3" value="4">Very Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle3" value="5">Excellent</label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="3" id="p3-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="princple2">How well does this aspect support <a data-toggle="tooltip" title="the distinctive nature of the street">street character</a>?</label>
+                      <div id="princple2">
+                        <label class="radio-inline"><input type="radio" name="principle3" value="1">Poor</label>
+                        <label class="radio-inline"><input type="radio" name="principle3" value="2">Fair</label>
+                        <label class="radio-inline"><input type="radio" name="principle3" value="3">Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle3" value="4">Very Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle3" value="5">Excellent</label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="3" id="p3-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="princple2">How well does this aspect support <a data-toggle="tooltip" title="avoiding harm to the environment by meeting present needs and supporting future generations">sustainability</a>?</label>
+                      <div id="princple2">
+                        <label class="radio-inline"><input type="radio" name="principle3" value="1">Poor</label>
+                        <label class="radio-inline"><input type="radio" name="principle3" value="2">Fair</label>
+                        <label class="radio-inline"><input type="radio" name="principle3" value="3">Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle3" value="4">Very Good</label>
+                        <label class="radio-inline"><input type="radio" name="principle3" value="5">Excellent</label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="3" id="p3-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <!-- Structured Feedback: Statements Based -->
-
-            <div class="panel panel-default" id="statement-based">
-              <div class="panel-heading">
-                <h3 class="panel-title">Statement Based</h3>
-              </div>
-
-              <div class="panel-body">
-                <div class="form-group">
-                  <label>Respond to each statement below.</label>
-                </div>
-
-                <div class="form-group">
-                  <label for="s1-comment">I like this aspect because...</label>
-                  <textarea class="form-control" rows="3" id="s1-comment"></textarea>
-                </div>
-
-                <div class="form-group">
-                  <label for="s1-comment">I wish this aspect...</label>
-                  <textarea class="form-control" rows="3" id="s2-comment"></textarea>
-                </div>
-
-                <div class="form-group">
-                  <label for="s1-comment">Here's how this aspect could...</label>
-                  <textarea class="form-control" rows="3" id="s3-comment"></textarea>
-                </div>
-              </div>
-            </div>
-
-            <!-- Structured Feedback: Dimension Based -->
-
-            <div class="panel panel-default" id="dimension-based">
-              <div class="panel-heading">
-                <h3 class="panel-title">Dimension Based</h3>
-              </div>
-              <div class="panel-body">
-                <div class="form-group">
-                  <label for="princple2">How <span class="text-primary">fair</span> is this aspect?</label>
-                  <div id="princple2">
-                    <label class="radio-inline"><input type="radio" name="principle1" value="1">Poor</label>
-                    <label class="radio-inline"><input type="radio" name="principle1" value="2">Fair</label>
-                    <label class="radio-inline"><input type="radio" name="principle1" value="3">Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle1" value="4">Very Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle1" value="5">Excellent</label>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" rows="3" id="p1-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
-                </div>
-
-                <div class="form-group">
-                  <label for="princple2">How <span class="text-primary">useful</span> is this aspect?</label>
-                  <div id="princple2">
-                    <label class="radio-inline"><input type="radio" name="principle2" value="1">Poor</label>
-                    <label class="radio-inline"><input type="radio" name="principle2" value="2">Fair</label>
-                    <label class="radio-inline"><input type="radio" name="principle2" value="3">Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle2" value="4">Very Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle2" value="5">Excellent</label>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" rows="3" id="p2-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
-                </div>
-
-                <div class="form-group">
-                  <label for="princple2">How <span class="text-primary">harmful</span> is this aspect?</label>
-                  <div id="princple2">
-                    <label class="radio-inline"><input type="radio" name="principle3" value="1">Poor</label>
-                    <label class="radio-inline"><input type="radio" name="principle3" value="2">Fair</label>
-                    <label class="radio-inline"><input type="radio" name="principle3" value="3">Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle3" value="4">Very Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle3" value="5">Excellent</label>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" rows="3" id="p3-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
-                </div>
-              </div>
-            </div>
-
-            <!-- Structured Feedback: Theme Based -->
-
-            <div class="panel panel-default" id="theme-based">
-              <div class="panel-heading">
-                <h3 class="panel-title">Theme Based</h3>
-              </div>
-              <div class="panel-body">
-                <div class="form-group">
-                  <label for="princple2">How well does this aspect support <span class="text-primary">transportation</span>?</label>
-                  <div id="princple2">
-                    <label class="radio-inline"><input type="radio" name="principle1" value="1">Poor</label>
-                    <label class="radio-inline"><input type="radio" name="principle1" value="2">Fair</label>
-                    <label class="radio-inline"><input type="radio" name="principle1" value="3">Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle1" value="4">Very Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle1" value="5">Excellent</label>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" rows="3" id="p1-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
-                </div>
-
-                <div class="form-group">
-                  <label for="princple2">How well does this aspect support <span class="text-primary">connect neighborhoods</span>?</label>
-                  <div id="princple2">
-                    <label class="radio-inline"><input type="radio" name="principle2" value="1">Poor</label>
-                    <label class="radio-inline"><input type="radio" name="principle2" value="2">Fair</label>
-                    <label class="radio-inline"><input type="radio" name="principle2" value="3">Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle2" value="4">Very Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle2" value="5">Excellent</label>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" rows="3" id="p2-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
-                </div>
-
-                <div class="form-group">
-                  <label for="princple2">How well does this aspect support <span class="text-primary">activity engagement</span>?</label>
-                  <div id="princple2">
-                    <label class="radio-inline"><input type="radio" name="principle3" value="1">Poor</label>
-                    <label class="radio-inline"><input type="radio" name="principle3" value="2">Fair</label>
-                    <label class="radio-inline"><input type="radio" name="principle3" value="3">Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle3" value="4">Very Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle3" value="5">Excellent</label>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" rows="3" id="p3-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
-                </div>
-
-                <div class="form-group">
-                  <label for="princple2">How well does this aspect support <span class="text-primary">street character</span>?</label>
-                  <div id="princple2">
-                    <label class="radio-inline"><input type="radio" name="principle3" value="1">Poor</label>
-                    <label class="radio-inline"><input type="radio" name="principle3" value="2">Fair</label>
-                    <label class="radio-inline"><input type="radio" name="principle3" value="3">Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle3" value="4">Very Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle3" value="5">Excellent</label>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" rows="3" id="p3-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
-                </div>
-
-                <div class="form-group">
-                  <label for="princple2">How well does this aspect support <span class="text-primary">sustainability</span>?</label>
-                  <div id="princple2">
-                    <label class="radio-inline"><input type="radio" name="principle3" value="1">Poor</label>
-                    <label class="radio-inline"><input type="radio" name="principle3" value="2">Fair</label>
-                    <label class="radio-inline"><input type="radio" name="principle3" value="3">Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle3" value="4">Very Good</label>
-                    <label class="radio-inline"><input type="radio" name="principle3" value="5">Excellent</label>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" rows="3" id="p3-comment" placeholder="Explain why you selected that rating. (optional)"></textarea>
-                </div>
-              </div>
-            </div>
-
-            <!--
-            1. develop inviting + accessible transit areas
-            2. ensure connections
-            3. produce great, green streets
-            4. generate public open space
-            5. reinforce walkability, bikeability + wellbeing
-            6. bridge the past + the future
-            7. nurture neighborhood character
-            8. stimulate sustainability + innovation
-            9. improve equity + opportunity
-            10. emphasize early integration, simple processes + maintainable long term solutions -->
             
             <div class="form-group">
-              <label for="general-comment">Is there anything else you'd like to add?</label>
+              <label for="general-comment">Is there anything else you would like to add?</label>
               <textarea class="form-control" rows="3" id="general-comment"></textarea>
             </div>
-            <button type="button" class="btn btn-default">Submit &amp; Next</button>
-            <button type="button" class="btn btn-default">Skip ></button>
+            <button type="button" class="btn btn-success">Submit &amp; Continue</button>
+            <button type="button" class="btn btn-danger">Submit &amp; Stop</button>
+            <button type="button" class="btn btn-default">Skip</button>
           </form>
-        </div>
       </div>
 
     </div> <!-- /container -->
@@ -380,6 +407,9 @@
     <script src="./js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- project-specific JS -->
+    <script src="./js/script.js"></script>
   
 
 <svg xmlns="http://www.w3.org/2000/svg" width="1140" height="500" viewBox="0 0 1140 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="57" style="font-weight:bold;font-size:57pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thirdslide</text></svg></body></html>
