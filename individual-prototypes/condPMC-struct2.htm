@@ -192,10 +192,57 @@
           <div id="fb-written">
             <label>Add as many feedback items about this aspect as you'd like. </label>
             <div class="form-group">
-              <button type="button" class="btn btn-success add-fb">
-                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Evidence For
+              <button type="button" class="btn btn-success add-fb" data-toggle="collapse" data-target="#collapseEvidenceFor" aria-expanded="false" aria-controls="collapseExample">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Evidence For
               </button>
-              <button type="button" class="btn btn-danger add-fb">
+
+              <button type="button" class="btn btn-danger add-fb" data-toggle="collapse" data-target="#collapseEvidenceAgainst" aria-expanded="false" aria-controls="collapseExample">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Evidence Against
+              </button>
+
+              <button type="button" class="btn btn-primary add-fb" data-toggle="collapse" data-target="#collapseIdea" aria-expanded="false" aria-controls="collapseExample">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Idea
+              </button>
+
+              <button type="button" class="btn btn-info add-fb" data-toggle="collapse" data-target="#collapseQuestion" aria-expanded="false" aria-controls="collapseExample">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Question
+              </button>
+
+              <button type="button" class="btn btn-warning add-fb" data-toggle="collapse" data-target="#collapseCommentStory" aria-expanded="false" aria-controls="collapseExample">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Comment/Story
+              </button>
+
+              <button type="button" class="btn btn-default add-fb" data-toggle="collapse" data-target="#collapseLink" aria-expanded="false" aria-controls="collapseExample">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Link
+              </button>
+            </div>
+
+            <div class="form-group collapse" id="collapseEvidenceFor">
+              <label for="s1-comment">Evidence For</label>
+              <textarea class="form-control" rows="3" id="s1-comment"></textarea>
+            </div>
+            <div class="form-group collapse" id="collapseEvidenceAgainst">
+              <label for="s1-comment">Evidence Against</label>
+              <textarea class="form-control" rows="3" id="s1-comment"></textarea>
+            </div>
+            <div class="form-group collapse" id="collapseIdea">
+              <label for="s1-comment">Idea</label>
+              <textarea class="form-control" rows="3" id="s1-comment"></textarea>
+            </div>
+            <div class="form-group collapse" id="collapseQuestion">
+              <label for="s1-comment">Question</label>
+              <textarea class="form-control" rows="3" id="s1-comment"></textarea>
+            </div>
+            <div class="form-group collapse" id="collapseCommentStory">
+              <label for="s1-comment">Comment/Story</label>
+              <textarea class="form-control" rows="3" id="s1-comment"></textarea>
+            </div>
+            <div class="form-group collapse" id="collapseLink">
+              <label for="s1-comment">Link</label>
+              <textarea class="form-control" rows="3" id="s1-comment"></textarea>
+            </div>
+
+              <!-- <button type="button" class="btn btn-danger add-fb">
                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Evidence Against
               </button>
               <button type="button" class="btn btn-primary add-fb">
@@ -209,13 +256,12 @@
               </button>
               <button type="button" class="btn btn-default add-fb">
                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Link
-              </button>
-            </div>
+              </button> -->
           </div>
 
           <hr>
 
-          <!-- <div class="form-group">
+          <!-- <div class="form-group collapse" id="collapseExample">
             <label for="s1-comment">Positives. I like...</label>
             <textarea class="form-control" rows="3" id="s1-comment"></textarea>
           </div>
