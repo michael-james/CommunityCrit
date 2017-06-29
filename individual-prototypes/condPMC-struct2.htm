@@ -12,9 +12,16 @@
     <title>Structured Feedback - CommunityCrit</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./js/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="./js/bootstrap.min.css" rel="stylesheet"> -->
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
     <!-- Bootstrap theme -->
     <link href="./js/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="./js/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
@@ -143,25 +150,92 @@
             </div>
           </div>
 
-          <div class="form-group">
-            <label>Respond to each statement below.</label>
-
-            <div class="form-group">
-              <label for="s1-comment">I like...</label>
-              <textarea class="form-control" rows="3" id="s1-comment"></textarea>
-            </div>
-
-            <div class="form-group">
-              <label for="s1-comment">I wish...</label>
-              <textarea class="form-control" rows="3" id="s2-comment"></textarea>
-            </div>
-
-            <div class="form-group">
-              <label for="s1-comment">Here's how...</label>
-              <textarea class="form-control" rows="3" id="s3-comment"></textarea>
+          <!-- <div class="form-group">
+            <label for="princple2">This aspect is <u>fair.</u></label>
+            <div id="princple2">
+              <label class="radio-inline"><input type="radio" name="principle1" value="1">Strongly Disagree</label>
+              <label class="radio-inline"><input type="radio" name="principle1" value="2">Disagree</label>
+              <label class="radio-inline"><input type="radio" name="principle1" value="3">Somewhat Disagree</label>
+              <label class="radio-inline"><input type="radio" name="principle1" value="4">Neutral</label>
+              <label class="radio-inline"><input type="radio" name="principle1" value="5">Somewhat Agree</label>
+              <label class="radio-inline"><input type="radio" name="principle1" value="6">Agree</label>
+              <label class="radio-inline"><input type="radio" name="principle1" value="7">Strongly Agree</label>
             </div>
           </div>
+
+          <div class="form-group">
+            <label for="princple2">This aspect is <u>valuable.</u></label>
+            <div id="princple2">
+              <label class="radio-inline"><input type="radio" name="principle1" value="1">Strongly Disagree</label>
+              <label class="radio-inline"><input type="radio" name="principle1" value="2">Disagree</label>
+              <label class="radio-inline"><input type="radio" name="principle1" value="3">Somewhat Disagree</label>
+              <label class="radio-inline"><input type="radio" name="principle1" value="4">Neutral</label>
+              <label class="radio-inline"><input type="radio" name="principle1" value="5">Somewhat Agree</label>
+              <label class="radio-inline"><input type="radio" name="principle1" value="6">Agree</label>
+              <label class="radio-inline"><input type="radio" name="principle1" value="7">Strongly Agree</label>
+            </div>
+          </div> -->
+
+          <div class="form-group">
+            <label for="princple2">This aspect has great potential.</label>
+            <div id="princple2">
+              <label class="radio-inline"><input type="radio" name="principle1" value="1">Strongly Disagree</label>
+              <label class="radio-inline"><input type="radio" name="principle1" value="2">Disagree</label>
+              <label class="radio-inline"><input type="radio" name="principle1" value="3">Somewhat Disagree</label>
+              <label class="radio-inline"><input type="radio" name="principle1" value="4">Neutral</label>
+              <label class="radio-inline"><input type="radio" name="principle1" value="5">Somewhat Agree</label>
+              <label class="radio-inline"><input type="radio" name="principle1" value="6">Agree</label>
+              <label class="radio-inline"><input type="radio" name="principle1" value="7">Strongly Agree</label>
+            </div>
+          </div>
+
+          <div id="fb-written">
+            <label>Add as many feedback items about this aspect as you'd like. </label>
+            <div class="form-group">
+              <button type="button" class="btn btn-success add-fb">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Evidence For
+              </button>
+              <button type="button" class="btn btn-danger add-fb">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Evidence Against
+              </button>
+              <button type="button" class="btn btn-primary add-fb">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Idea
+              </button>
+              <button type="button" class="btn btn-info add-fb">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Question
+              </button>
+              <button type="button" class="btn btn-warning add-fb">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Comment/Story
+              </button>
+              <button type="button" class="btn btn-default add-fb">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Link
+              </button>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- <div class="form-group">
+            <label for="s1-comment">Positives. I like...</label>
+            <textarea class="form-control" rows="3" id="s1-comment"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="s1-comment">Negatives. I dislike...</label>
+            <textarea class="form-control" rows="3" id="s1-comment"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="s1-comment">Solutions. I wish... and here's how...</label>
+            <textarea class="form-control" rows="3" id="s2-comment"></textarea>
+          </div> -->
+
+            <!-- <div class="form-group">
+              <label for="s1-comment">Strategies to Accomplish Solution. Here's how...</label>
+              <textarea class="form-control" rows="3" id="s3-comment"></textarea>
+            </div> -->
           
+
           <button type="button" class="btn btn-success">Submit &amp; Continue</button>
           <button type="button" class="btn btn-danger">Submit &amp; Stop</button>
           <button type="button" class="btn btn-default">Skip</button>
@@ -176,7 +250,12 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./js/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="./js/bootstrap.min.js"></script>
+    
+    <!-- <script src="./js/bootstrap.min.js"></script> -->
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
     <script src="./js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./js/ie10-viewport-bug-workaround.js"></script>
