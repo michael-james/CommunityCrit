@@ -21,3 +21,17 @@ div.pad {
 .label-pad-left {
   margin-left: 5px;
 }
+
+.fb-explain {
+	margin-left: 8px;
+	font-style: italic;
+}
+
+.form-group.collapse {
+	margin-bottom: 30px;
+}
+
+.fb-remove a {
+	margin-left: 3px;
+	cursor: pointer;
+}
