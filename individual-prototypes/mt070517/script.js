@@ -3,6 +3,24 @@ $( document ).ready(function() {
   		var shareType = $(this).val();
   		createShareForm(shareType);
   	});
+
+  	$(".likeComment").click( function() {
+  		var $thumbsup = $(this).children(".glyphicon-thumbs-up");
+  		var $counter = $(this).children(".likeCount");
+		var count = parseInt($counter.text());
+  		var likeColor = "blue";
+
+  		if ($thumbsup.hasClass("liked")) {
+  			count -= 1;
+  			$counter.text(count);
+  			$thumbsup.removeClass("liked");
+  		} else {
+  			count += 1;
+  			$counter.text(count);
+  			$thumbsup.addClass("liked");
+  		}
+  		
+  	});
 });
 
 
@@ -39,6 +57,9 @@ function createShareForm(shareType) {
     case "reference":
         data = ["This makes me <strong>think of</strong>...", , "this thing I know or this link.", 
         		"We could learn", "this from that."];
+        break;
+    case "custom":
+        data = ["(custom)", , "What's on your mind? Please try to use one of the other options if possible."];
         break;
     default:
         data = [];
