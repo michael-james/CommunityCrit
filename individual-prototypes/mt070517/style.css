@@ -82,3 +82,7 @@ a.label {
 .commentCount {
   margin-left: 2px;
 }
+
+.panel-heading .commentCount {
+  margin-left: 5px;
+}
