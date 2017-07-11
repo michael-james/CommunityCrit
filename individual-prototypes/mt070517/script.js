@@ -79,7 +79,7 @@ function createShareForm(shareType) {
         		"We could learn", "this from that."];
         break;
     case "custom":
-        data = ["(custom)", , "What's on your mind? Please try to use one of the other options if possible."];
+        data = ["I have something else to say.", , "What's on your mind? Please try to use one of the other options if possible."];
         break;
     default:
         data = [];

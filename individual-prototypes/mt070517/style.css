@@ -6,9 +6,17 @@ body {
 	margin-top: 22px;
 }
 
+blockquote {
+  font-size: 14px;
+}
+
+blockquote footer {
+  font-size: 90%;
+}
+
 blockquote img {
-	margin-bottom: 15px;
-	max-height: 150px;
+	max-height: 600px;
+  padding-top: 10px;
 }
 
 img.in-line {
@@ -95,4 +103,8 @@ div.terms {
     padding: 6px;
     overflow: auto;
     margin-bottom: 5px;
+}
+
+#facet-detail blockquote h3 {
+  margin-top: 11px;
 }
