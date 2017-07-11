@@ -108,3 +108,7 @@ div.terms {
 #facet-detail blockquote h3 {
   margin-top: 11px;
 }
+
+iframe {
+  border: none;
+}
