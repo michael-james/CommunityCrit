@@ -31,6 +31,16 @@ $( document ).ready(function() {
         	$($otherInput).hide();
         }
     });
+
+    $("#consent").change(function() {
+    	console.log(this.checked);
+    	var $signUp = $('#signUp');
+    	if (this.checked) {
+    		$signUp.attr("disabled", false);
+    	} else {
+    		$signUp.attr("disabled", true);
+    	}
+	});
 });
 
 

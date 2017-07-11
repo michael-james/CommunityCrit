@@ -86,3 +86,13 @@ a.label {
 .panel-heading .commentCount {
   margin-left: 5px;
 }
+
+div.terms {
+    /*width: 600px;*/
+    height: 200px;
+    border: 1px solid #ccc;
+    background-color: rgba(0, 0, 0, 0.06);
+    padding: 6px;
+    overflow: auto;
+    margin-bottom: 5px;
+}

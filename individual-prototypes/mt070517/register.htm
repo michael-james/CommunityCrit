@@ -74,9 +74,28 @@
                   <input id="password-confirm" type="password" name="password_confirmation" required="required" class="form-control">
                 </div>
               </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+              <label>Consent Form</label>
+              <div class="terms">
+                You are invited to take part in a research survey about [fill in topic of study].  Your participation will require approximately [fill in your best estimate] minutes and is completed online at your computer.  There are no known risks or discomforts associated with this survey.  [List any benefits to either the participant or academic knowledge more broadly. It is fine to include incentives such as a raffle for gift certificates here. Do not list benefits to yourself, such as completion of your thesis.]  Taking part in this study is completely voluntary. If you choose to be in the study you can withdraw at any time without adversely affecting your relationship with anyone at Colorado College.  Your responses will be kept strictly confidential, and digital data will be stored in secure computer files.  Any report of this research that is made available to the public will not include your name or any other individual information by which you could be identified.  If you have questions or want a copy or summary of this study’s results, you can contact the researcher at the email address above. If you have any questions about whether you have been treated in an illegal or unethical way, contact the Colorado College Institutional Research Board chair, Amanda Udis-Kessler at 719-227-8177 or audiskessler@coloradocollege.edu. Please feel free to print a copy of this consent page to keep for your records.
+              </div>
+
+              <div class="form-group">
+                <div class="col-md-12">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" id="consent">
+                      I am 18 years of age or older and consent to participate in this study.
+                    </label>
+                  </div>
+                </div>
+              </div>
+
               <div class="form-group">
                 <div class="col-md-6 col-md-offset-4">
-                  <a type="submit" class="btn btn-primary" href="survey.htm">Sign up</a>
+                  <a type="submit" class="btn btn-primary" href="survey.htm" id="signUp" disabled>Sign up</a>
                 </div>
               </div>
             </form>
@@ -89,7 +108,7 @@
 </div> <!-- #app -->
 
 <!-- Scripts -->
-<script src="./mt070517_files/app.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="script.js"></script>
 
 </body></html>
