@@ -21,6 +21,16 @@ $( document ).ready(function() {
   		}
   		
   	});
+
+  	$('#neighborhood').change(function(){
+        var selectVal = $(this).val()
+        var $otherInput = $('#neighOtherFG');
+        if (selectVal == "(other)") {
+        	$($otherInput).show();
+        } else {
+        	$($otherInput).hide();
+        }
+    });
 });
 
 
