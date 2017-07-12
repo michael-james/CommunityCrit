@@ -97,7 +97,7 @@ a.label {
 
 div.terms {
     /*width: 600px;*/
-    height: 200px;
+    height: 225px;
     border: 1px solid #ccc;
     background-color: rgba(0, 0, 0, 0.06);
     padding: 6px;
@@ -109,6 +109,27 @@ div.terms {
   margin-top: 11px;
 }
 
+#facet-detail .tab-pane p {
+  margin: 0;
+}
+
+/*trashcan*/
+#myComments .close {
+  font-size: 16px;
+}
+
 iframe {
   border: none;
+}
+
+.page-header {
+  margin-top: 0;
+}
+
+.tab-pane {
+  margin-top: 22px;
+}
+
+.force-text-left {
+  text-align: left !important;
 }
