@@ -97,7 +97,7 @@ a.label {
 
 div.terms {
     /*width: 600px;*/
-    height: 200px;
+    height: 225px;
     border: 1px solid #ccc;
     background-color: rgba(0, 0, 0, 0.06);
     padding: 6px;
@@ -113,8 +113,9 @@ div.terms {
   margin: 0;
 }
 
+/*trashcan*/
 #myComments .close {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 iframe {
@@ -127,4 +128,8 @@ iframe {
 
 .tab-pane {
   margin-top: 22px;
+}
+
+.force-text-left {
+  text-align: left !important;
 }
