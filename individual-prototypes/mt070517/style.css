@@ -109,10 +109,22 @@ div.terms {
   margin-top: 11px;
 }
 
+#facet-detail .tab-pane p {
+  margin: 0;
+}
+
+#myComments .close {
+  font-size: 18px;
+}
+
 iframe {
   border: none;
 }
 
 .page-header {
   margin-top: 0;
+}
+
+.tab-pane {
+  margin-top: 22px;
 }

@@ -30,7 +30,6 @@
 }
 
 </style>
-<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body data-gr-c-s-loaded="true"><div id="StayFocusd-infobar" style="display:none;">
     <img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png">
@@ -269,7 +268,7 @@
       </strong>
     </ul>
 
-    <div style="min-height: 250px">
+    <div id="feedback" style="min-height: 475px">
 
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
@@ -280,26 +279,33 @@
       <!-- Tab panes -->
       <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="thoughts">
-          <h3>Share Your Thoughts</h3>
 
           <div class="row" id="shareBtns">
-            <div class="col-md-12">
-              <div class="btn-group">
+            <div class="col-md-3" style="margin-bottom: 11px;">
+              <div class="btn-group-vertical btn-block">
                 <button class="btn btn-default" value="pro">I <strong>like</strong>...</button>
                 <button class="btn btn-default" value="con">I am <strong>concerned</strong> about...</button>
                 <button class="btn btn-default" value="suggestion">I have a <strong>suggestion</strong>...</button>
                 <button class="btn btn-default" value="question">I have a <strong>question</strong>...</button>
                 <button class="btn btn-default" value="story">I have a <strong>story</strong> about...</button>
                 <button class="btn btn-default" value="reference">This makes me <strong>think of</strong>...</button>
+                <button class="btn btn-default" value="custom">(something else)</button>
+              </div> <!-- .btn-group-vertical -->
+            </div> <!-- .col -->
+
+            <div class="col-md-9">
+              <div class="row is-table-row" id="shareFormWrapper">
+                <div id="shareForm"></div>
               </div>
-              <button class="btn btn-default" value="custom" style="margin-left: 10px;">(something else)</button>
-            </div>
+            </div> <!-- .col -->
+
+          </div> <!-- .row -->
+
+          <div class="row" id="myComments">
           </div>
 
-          <div class="row is-table-row" id="shareForms">
-            <!-- new forms go here -->
-          </div>
-        </div>
+        </div> <!-- .tab-pane -->
+
         <div role="tabpanel" class="tab-pane" id="comments">
           <div class="row" style="margin-top: 22px;">
                 
