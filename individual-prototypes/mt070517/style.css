@@ -1,5 +1,10 @@
 body {
 	--primary: #3097D1;
+  /*background-color: #fff;*/
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:visited {
+  /*background-color: #fff;*/
 }
 
 .nav-tabs {
@@ -48,19 +53,34 @@ img.in-line {
   background-color: #b130d1;
 }
 
-a.panel-link {
-  text-decoration: none;
+#topic-detail .panel-heading {
+  /*background-color: #f0f0f0;*/
 }
 
-a.panel-link {
+#topic-detail a .panel-heading:hover {
+  text-decoration: underline;
+}
+
+a.panel-link-heading:link,
+a.panel-link-heading:hover,
+a.panel-link-heading:visited {
+  text-decoration: none;
   color: inherit;
 }
 
-a.panel-link .panel:hover .panel-body {
+#topics a.panel-link {
+  text-decoration: none;
+}
+
+#topics a.panel-link {
+  color: inherit;
+}
+
+#topics a.panel-link .panel:hover.panel-default .panel-heading {
   background-color: #eee;
 }
 
-a.panel-link .panel:hover.panel-default .panel-heading {
+#topics a.panel-link .panel:hover .panel-body {
   background-color: #eee;
 }
 
@@ -132,4 +152,28 @@ iframe {
 
 .force-text-left {
   text-align: left !important;
+}
+
+#topic-detail .learn-more .panel {
+  font-size: 13px;
+}
+
+#topic-detail .learn-more .panel-title {
+  margin-bottom: 5px;
+}
+
+#topic-detail .panel-group .panel {
+  margin-top: 5px;
+}
+
+#topic-detail .img-max {
+  max-height: 700px;
+}
+
+#topic-detail figure {
+  margin-bottom: 10px;
+}
+
+#learn-more .panel {
+  margin-bottom: 10px;
 }

@@ -44,7 +44,30 @@ $( document ).ready(function() {
     		$signUp.attr("disabled", true);
     	}
 	});
+
+	$("#learnMoreBtn").click( function () {
+		$(this).toggleClass("active");
+	});
+
+	// $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+	// 	var iframeSel = 'iframe[src$="feedback.htm"]';
+	// // 	// var body = $(iframeSel + ' body');
+	// 	var $iframe = $('iframe[src$="feedback.htm"]');
+	// 	console.log($iframe);
+	// // 	// console.log(body.height);
+	// // 	// console.log($iframe.height);
+		
+	// // 	$iframe.style.height = $iframe.contentWindow.document.body.offsetHeight + 'px';
+	// //   // e.target // newly activated tab
+	// //   // e.relatedTarget // previous active tab
+	// });
 });
+
+// $('iframe').load(function() {
+// 	console.log(this.contentWindow.document.body.offsetHeight + 'px');
+//     this.style.height =
+//     this.contentWindow.document.body.offsetHeight + 'px';
+// });
 
 
       //     
