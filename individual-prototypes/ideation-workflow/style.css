@@ -1,0 +1,191 @@
+body {
+	--primary: #3097D1;
+  /*background-color: #fff;*/
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:visited {
+  /*background-color: #fff;*/
+}
+
+.nav-tabs {
+	/*margin-top: 22px;*/
+}
+
+blockquote {
+  font-size: 14px;
+}
+
+blockquote footer {
+  font-size: 90%;
+}
+
+blockquote img {
+	max-height: 600px;
+  padding-top: 10px;
+}
+
+img.in-line {
+	margin-bottom: 15px;
+	max-height: 150px;
+}
+
+#shareBtns {
+  margin-bottom: 22px;
+}
+
+#shareForms .panel {
+  height: 387px;
+}
+
+.likeComment {
+  cursor: pointer;
+}
+
+.likeCount {
+  margin-left: 2px;
+}
+
+.liked {
+  color: var(--primary);
+}
+
+.label-default.label-purple {
+  background-color: #b130d1;
+}
+
+#topic-detail .panel-heading {
+  /*background-color: #f0f0f0;*/
+}
+
+#topic-detail a .panel-heading:hover {
+  text-decoration: underline;
+}
+
+a.panel-link-heading:link,
+a.panel-link-heading:hover,
+a.panel-link-heading:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+#topics a.panel-link {
+  text-decoration: none;
+}
+
+#topics a.panel-link {
+  color: inherit;
+}
+
+#topics a.panel-link .panel:hover.panel-default .panel-heading {
+  background-color: #eee;
+}
+
+#topics a.panel-link .panel:hover .panel-body {
+  background-color: #eee;
+}
+
+.no-btm {
+  margin-bottom: 0;
+}
+
+#shareBtns {
+  margin-bottom: 22px;
+}
+
+a.label {
+  margin-left: 5px;
+}
+
+/*source-detail*/
+
+.viewComments {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.viewComments:hover {
+  text-decoration: none;
+}
+
+.commentCount {
+  margin-left: 2px;
+}
+
+.panel-heading .commentCount {
+  margin-left: 5px;
+}
+
+div.terms {
+    /*width: 600px;*/
+    height: 225px;
+    border: 1px solid #ccc;
+    background-color: rgba(0, 0, 0, 0.06);
+    padding: 6px;
+    overflow: auto;
+    margin-bottom: 5px;
+}
+
+#topic-detail blockquote h3 {
+  margin-top: 11px;
+}
+
+#topic-detail .tab-pane p {
+  margin: 0;
+}
+
+/*trashcan*/
+#myComments .close {
+  font-size: 16px;
+}
+
+iframe {
+  border: none;
+}
+
+.page-header {
+  margin-top: 0;
+}
+
+.tab-pane {
+  margin-top: 22px;
+}
+
+.force-text-left {
+  text-align: left !important;
+}
+
+#topic-detail .learn-more .panel {
+  font-size: 13px;
+}
+
+#topic-detail .learn-more .panel-title {
+  margin-bottom: 5px;
+}
+
+#topic-detail .panel-group .panel {
+  margin-top: 5px;
+}
+
+#topic-detail .img-max {
+  max-height: 700px;
+}
+
+#topic-detail figure {
+  margin-bottom: 10px;
+}
+
+#learn-more .panel {
+  margin-bottom: 10px;
+}
+
+.instruction {
+  font-size: 115%;
+}
+
+.radio-likert-left {
+  margin-right: 15px;
+}
+
+.radio-likert-right {
+  margin-left: 15px;
+}

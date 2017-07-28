@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://communitycrit.dev/tasks -->
+<html lang="en" class="gr__communitycrit_dev"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="5J1I3ygbgTXeYW8L97f7sxMQNhH8JmNn7TshX7pH">
+
+    <title>Hyrbid-List</title>
+
+    <!-- Styles -->
+    <link href="./mt070517_files/app.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body data-gr-c-s-loaded="true"><div id="StayFocusd-infobar" style="display:none;">
+    <img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png">
+    <span id="StayFocusd-infobar-msg"></span>
+    <span id="StayFocusd-infobar-links">
+        <a id="StayFocusd-infobar-never-show">hide forever</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a id="StayFocusd-infobar-hide">hide once</a>
+    </span>
+</div>
+<div id="app">
+  <nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+  <div class="navbar-header">
+      <button type="button" data-toggle="collapse" data-target="#app-navbar-collapse" class="navbar-toggle collapsed"><span class="sr-only">Toggle Navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+      <a href="index.htm" class="navbar-brand">CommunityCrit</a></div>
+      <div id="app-navbar-collapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="about.htm">About Us</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <!-- <li><a href="http://communitycrit.dev/admin/dashboard">Admin</a></li> -->
+          <li class="dropdown"><a href="http://communitycrit.dev/tasks#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">Michael James <span class="caret"></span></a>
+            <ul role="menu" class="dropdown-menu">
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="panel panel-default">
+          <div class="panel-heading">Help Us Find the Right Info for You</div>
+          <div class="panel-body">
+            <form role="form" action="detail.htm" class="form-horizontal">
+              <div class="form-group">
+                <label for="email" class="col-md-4 control-label">What interests you about the Park to Park project?</label> 
+
+                <div class="col-md-8">
+
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox">
+                      Activity Engagement
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      Connecting Neighborhoods
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      Culture and Heritage
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      Economy
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox">
+                      Mobility
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      Property Ownership
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      Public Facilities
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      Street Character
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox">
+                      Sustainability
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      Urban Design
+                    </label>
+                  </div>
+
+                </div> <!-- .col -->
+              </div> <!-- .form-group -->
+
+              <div class="form-group">
+                <label for="neighborhood" class="col-md-4 control-label">Which neighborhood do you live in?</label> 
+                <div class="col-md-8">
+                  <select id="neighborhood" class="form-control">
+                    <option>(select one)</option>
+                    <option>Barrio Logan</option>
+                    <option>East Village</option>
+                    <option>Ballpark Village</option>
+                    <option>Bay Park</option>
+                    <option>Center City</option>
+                    <option>Cortez Hill</option>
+                    <option>Del Mar</option>
+                    <option>Downtown Marina District</option>
+                    <option>Golden Hill</option>
+                    <option>Hillcrest</option>
+                    <option>Logan Heights</option>
+                    <option>Marina</option>
+                    <option>North Park</option>
+                    <option>South Park</option>
+                    <option>Talmadge</option>
+                    <option>(other)</option>
+                    <!-- <option>Outside of San Diego</option> -->
+                  </select>  
+                </div>
+
+                <div class="col-md-8 col-md-offset-4" id="neighOtherFG" style="display: none;">
+                  <input type="text" class="form-control" id="neighborhoodOther" placeholder="Enter another neighborhood">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-md-4 control-label">Which option best describes your relation to the Park to Park project?</label>
+                <div class="col-md-8">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="relation" id="optionsRadios1" value="option1">
+                      Resident
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="relation" id="optionsRadios2" value="option2">
+                      Observer
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="relation" id="optionsRadios3" value="option3">
+                      Project Organizer
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="relation" id="optionsRadios4" value="option4">
+                      City Planner
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="relation" id="optionsRadios5" value="option5">
+                      Developer
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-md-4 control-label">How familiar are you with the Park to Park project?</label>
+                <div class="col-md-8">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="familiarProj" id="optionsRadios1" value="option1">
+                      I’ve never heard of the project
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="familiarProj" id="optionsRadios2" value="option2">
+                      I’ve heard of the project
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="familiarProj" id="optionsRadios3" value="option3">
+                      I’ve been to a meeting about the project
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="familiarProj" id="optionsRadios3" value="option3">
+                      I’ve been to multiple meetings about the project
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="familiarProj" id="optionsRadios4" value="option4">
+                      I’m helping to organize or plan the project
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-md-4 control-label">Rate your knowledge of community and urban planning.</label>
+                <div class="col-md-8">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="familiarUD" id="optionsRadios1" value="option1">
+                      No knowledge of urban planning
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="familiarUD" id="optionsRadios2" value="option2">
+                      I know a little bit about urban planning but have not attended a workshop
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="familiarUD" id="optionsRadios3" value="option3">
+                      I’ve been to a few urban planning workshops
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="familiarUD" id="optionsRadios4" value="option4">
+                      I have studied urban planning
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="familiarUD" id="optionsRadios5" value="option5">
+                      I practice as an urban planner
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-md-6 col-md-offset-4">
+                  <a type="submit" class="btn btn-primary" href="detail.htm">Get Started</a>
+                </div>
+              </div>
+            </form>
+          </div> <!-- .panel-body -->
+        </div> <!-- .panel -->
+      </div> <!-- .col -->
+    </div> <!-- .row -->
+
+  </div> <!-- .container -->
+</div> <!-- #app -->
+
+<!-- Scripts -->
+<script src="./mt070517_files/app.js"></script>
+<script src="script.js"></script>
+
+</body></html>
