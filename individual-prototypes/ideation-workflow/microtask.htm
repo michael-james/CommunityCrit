@@ -45,17 +45,17 @@
                 </a></div>
                 <div id="app-navbar-collapse" class="collapse navbar-collapse">
                   <ul class="nav navbar-nav">
-                    <li><a href="/activities">Activity Center</a></li>
-                    <li><a href="/ideas">Ideas</a></li>
+                    <!-- <li><a href="/activities">Overview</a></li> -->
+                    <!-- <li><a href="/ideas">Ideas</a></li> -->
 <!--                     <li class="dropdown"><a href="sources.htm" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">Sources<span class="caret"></span></a>
                     <ul role="menu" class="dropdown-menu">
                       <li><a href="source-detail.htm">14th Street Promenade Master Plan</a></li>
                       <li><a href="source-detail.htm">East Village South Focus Plan</a></li>
                     </ul> -->
-                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/about">About</a></li>
                   </ul>
                 <ul class="nav navbar-nav navbar-right">
-                <!-- <li><a href="http://communitycrit.dev/tasks">Tasks</a></li> -->
+                <li><a href="/my-contributions">My Contributions <span class="badge">12</span></a></li>
                 <!-- <li><a href="http://communitycrit.dev/admin/dashboard">Admin</a></li> -->
                 <li class="dropdown"><a href="http://communitycrit.dev/tasks#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">
                                 Michael James <span class="caret"></span></a> <ul role="menu" class="dropdown-menu"><li><a href="http://communitycrit.dev/logout" onclick="event.preventDefault();
@@ -82,382 +82,294 @@
       </h1>
     </div> --> <!-- .page-header -->
 
-    <div class="row">
-      <div class="col-md-3">
-        <div class="panel panel-default">
+    <div id="feedback" style="min-height: 500px; border: 1px">
+      <div class="well">
+        <div class="row">
+          <div class="col-md-3">
+            <img class="img-responsive" src="assets/design-header.jpg"></img>
+          </div>
+          <div class="col-md-9">
+            <h2 style="margin-top: 0;">
+            Idea: Connection Point
+            <button class="btn btn-default pull-right">Switch idea</button>
+            </h2>
+            <p>About the idea...Meantime, Fedallah was calmly eyeing the right whale's head, and ever and anon glancing from the deep wrinkles there to the lines in his own hand. And Ahab chanced so to stand, that the Parsee occupied his shadow; while, if the Parsee's shadow was there at all it seemed only to blend with, and lengthen Ahab's. As the crew toiled on, Laplandish speculations were bandied among them, concerning all these passing things.</p>
+          </div>
+        </div> <!-- .row -->
+      
+        <div class="panel panel-default" style="margin-top: 20px; margin-bottom: 0;">
           <div class="panel-heading">
             <div class="panel-title">
-              My History
+              Rate the Idea
             </div>
           </div>
           <div class="panel-body">
-            <h4>Submissions <span class="badge">3</span></h4>
-            <p>
-              <a>Build a tower in the center of the intersection</a>
-            </p>
-            <p>
-              <a>Item submitted</a>
-            </p>
-            <p>
-              <a>Item submitted</a>
-            </p>
+            <form>
 
-            <h4>Improvements <span class="badge">8</span></h4>
-            <p>
-              <a>The idea could be improved to</a>
-            </p>
-            <p>
-              <a>Item submitted</a>
-            </p>
-            <p>
-              <a>Item submitted</a>
-            </p>
+              <!-- originality -->
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-md-3">
+                    <label class="radio-likert-left">Not original at all</label>
+                  </div>
 
-            <h4>Evaluations <span class="badge">5</span></h4>
-            <p>
-              <a>Build a tower in the center of the intersection</a>
-            </p>
-            <p>
-              <a>Item submitted</a>
-            </p>
-            <p>
-              <a>Item submitted</a>
-            </p>
+                  <div class="col-md-5">
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsOrig" id="inlineRadio1" value="option1"> 1
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsOrig" id="inlineRadio2" value="option2"> 2
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsOrig" id="inlineRadio3" value="option3"> 3
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsOrig" id="inlineRadio4" value="option4"> 4
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsOrig" id="inlineRadio5" value="option5"> 5
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsOrig" id="inlineRadio6" value="option6"> 6
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsOrig" id="inlineRadio7" value="option7"> 7
+                    </label>
+                  </div>
+                
+                  <div class="col-md-3">
+                    <label class="radio-likert-right">Extremely original</label>
+                  </div>
+                </div>
+              </div>
 
+              <!-- practicality -->
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-md-3">
+                    <label class="radio-likert-left">Not practical at all</label>
+                  </div>
+
+                  <div class="col-md-5">
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsPrac" id="inlineRadio1" value="option1"> 1
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsPrac" id="inlineRadio2" value="option2"> 2
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsPrac" id="inlineRadio3" value="option3"> 3
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsPrac" id="inlineRadio4" value="option4"> 4
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsPrac" id="inlineRadio5" value="option5"> 5
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsPrac" id="inlineRadio6" value="option6"> 6
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsPrac" id="inlineRadio7" value="option7"> 7
+                    </label>
+                  </div>
+                
+                  <div class="col-md-3">
+                    <label class="radio-likert-right">Extremely practical</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- beneficial -->
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-md-3">
+                    <label class="radio-likert-left">Not beneficial at all</label>
+                  </div>
+
+                  <div class="col-md-5">
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio1" value="option1"> 1
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio2" value="option2"> 2
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio3" value="option3"> 3
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio4" value="option4"> 4
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio5" value="option5"> 5
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio6" value="option6"> 6
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio7" value="option7"> 7
+                    </label>
+                  </div>
+                
+                  <div class="col-md-3">
+                    <label class="radio-likert-right">Extremely beneficial</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- impact -->
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-md-3">
+                    <label class="radio-likert-left">Very negative impact</label>
+                  </div>
+
+                  <div class="col-md-5">
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio1" value="option1"> -3
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio2" value="option2"> -2
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio3" value="option3"> -1
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio4" value="option4"> 0
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio5" value="option5"> 1
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio6" value="option6"> 2
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio7" value="option7"> 3
+                    </label>
+                  </div>
+                
+                  <div class="col-md-3">
+                    <label class="radio-likert-right">Very positive impact</label>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button class="btn btn-success pull-right">I'm Done</button>
+              <button class="btn btn-default pull-right" style="margin-right: 10px;">Skip</button>
+            </form>
+          </div>
+        </div> <!-- .panel -->
+      </div> <!-- .well -->
+
+      <!-- build -->
+      <div class="well">
+        <div class="row">
+          <div class="col-md-3">
+            <img class="img-responsive" src="assets/design-header.jpg"></img>
+          </div>
+          <div class="col-md-9">
+            <h2 style="margin-top: 0;">
+            Idea: Tower
+            <button class="btn btn-default pull-right">Switch idea</button>
+            </h2>
+            <p>About the idea...Meantime, Fedallah was calmly eyeing the right whale's head, and ever and anon glancing from the deep wrinkles there to the lines in his own hand. And Ahab chanced so to stand, that the Parsee occupied his shadow; while, if the Parsee's shadow was there at all it seemed only to blend with, and lengthen Ahab's. As the crew toiled on, Laplandish speculations were bandied among them, concerning all these passing things.</p>
+          </div>
+        </div> <!-- .row -->
+        
+      
+        <div class="panel panel-default" style="margin-top: 20px; margin-bottom: 0;">
+          <div class="panel-heading">
+            <div class="panel-title">
+              Improve the Idea
+            </div>
+          </div>
+          <div class="panel-body">
+            <h4 style="margin-top: 0;">Reference: Project Goal</h4>
+            <p>
+              About the idea...Meantime, Fedallah was calmly eyeing the right whale's head, and ever and anon glancing from the deep wrinkles there to the lines in his own hand. And Ahab chanced so to stand, that the Parsee occupied his shadow; while, if the Parsee's shadow was there at all it seemed only to blend with, and lengthen Ahab's. As the crew toiled on, Laplandish speculations were bandied among them, concerning all these passing things.
+            </p>
           </div>
           <!-- List group -->
           <ul class="list-group">
             <li class="list-group-item">
-              <div>
-                <strong>Community Total</strong></br>
-                <span class="badge">23</span> ideas and <span class="badge">102</span> responses submitted by <span class="badge">12</span> people
-              </div>
+              <form>
+               <div class="form-group">
+                  <label class="instruction" for="submissionText">Improve the current idea by suggesting changes or additions so that it supports the above project goal.</label>
+                  <textarea class="form-control" rows="3" id="submissionText"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button class="btn btn-success pull-right">I'm Done</button>
+                <button class="btn btn-default pull-right">Skip</button>
+              </form>
             </li>
           </ul> <!-- list group -->
-        </div>
-      </div> <!-- .col -->
+        </div> <!-- .panel -->
+      </div> <!-- .well -->
 
-      <div class="col-md-9">
+        <!-- <div style="margin-top: 200px;"></div> -->
 
-        <div id="feedback" style="min-height: 500px; border: 1px">
+        <div class="well">
+          <div class="row">
+            <div class="col-md-3">
+              <img class="img-responsive" src="assets/design-header.jpg"></img>
+            </div>
+            <div class="col-md-9">
+              <h2 style="margin-top: 0;">
+              Idea: Tower
+              <button class="btn btn-default pull-right">Switch idea</button>
+              </h2>
+              <p>About the idea...Meantime, Fedallah was calmly eyeing the right whale's head, and ever and anon glancing from the deep wrinkles there to the lines in his own hand. And Ahab chanced so to stand, that the Parsee occupied his shadow; while, if the Parsee's shadow was there at all it seemed only to blend with, and lengthen Ahab's. As the crew toiled on, Laplandish speculations were bandied among them, concerning all these passing things.</p>
+            </div>
+          </div> <!-- .row -->
+        
+          <div class="panel panel-default" style="margin-top: 20px; margin-bottom: 0;">
+            <div class="panel-heading">
+              <div class="panel-title">
+                Improve the Idea
+              </div>
+            </div>
+            <div class="panel-body">
+              <form>
+               <div class="form-group">
+                  <label class="instruction" for="submissionText">How does this idea contradict or support the above guideline?</label>
+                  <textarea class="form-control" rows="3" id="submissionText"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button class="btn btn-success pull-right">I'm Done</button>
+                <button class="btn btn-default pull-right">Skip</button>
+              </form>
+            </div>
+          </div> <!-- .panel -->
+        </div> <!-- .well -->
 
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#eval" role="tab" data-toggle="tab">Evaluate</a></li>
-            <li role="presentation"><a href="#build" role="tab" data-toggle="tab">Improve an Idea</a></li>
-            <li role="presentation"><a href="#submit" role="tab" data-toggle="tab">Submit an Idea</a></li>
-          </ul>
-
-          <!-- Tab panes -->
-          <div class="tab-content">
-
-            <!-- eval -->
-            <div role="tabpanel" class="tab-pane active" id="eval">
-              <div class="well">
-                <div class="row">
-                  <div class="col-md-3">
-                    <img class="img-responsive" src="assets/design-header.jpg"></img>
+        <!-- submit -->
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="panel-title">
+                  Submit an Idea
+                </div>
+              </div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <label class="instruction" for="submissionText">What would you like to see or do at El Nudillo, the intersection of 14th Street and National Avenue?</label>
+                    <textarea class="form-control" rows="3" id="submissionText"></textarea>
                   </div>
-                  <div class="col-md-9">
-                    <h2 style="margin-top: 0;">
-                    Idea: Connection Point
-                    <button class="btn btn-default pull-right">Switch idea</button>
-                    </h2>
-                    <p>About the idea...Meantime, Fedallah was calmly eyeing the right whale's head, and ever and anon glancing from the deep wrinkles there to the lines in his own hand. And Ahab chanced so to stand, that the Parsee occupied his shadow; while, if the Parsee's shadow was there at all it seemed only to blend with, and lengthen Ahab's. As the crew toiled on, Laplandish speculations were bandied among them, concerning all these passing things.</p>
-                  </div>
-                </div> <!-- .row -->
-                
-              
-                <div class="panel panel-default" style="margin-top: 20px; margin-bottom: 0;">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                      Rate the Idea
-                    </div>
-                  </div>
-                  <div class="panel-body">
-                    <form>
-
-                      <!-- originality -->
-                      <div class="form-group">
-                        <div class="row">
-                          <div class="col-md-3">
-                            <label class="radio-likert-left">Not original at all</label>
-                          </div>
-
-                          <div class="col-md-5">
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsOrig" id="inlineRadio1" value="option1"> 1
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsOrig" id="inlineRadio2" value="option2"> 2
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsOrig" id="inlineRadio3" value="option3"> 3
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsOrig" id="inlineRadio4" value="option4"> 4
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsOrig" id="inlineRadio5" value="option5"> 5
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsOrig" id="inlineRadio6" value="option6"> 6
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsOrig" id="inlineRadio7" value="option7"> 7
-                            </label>
-                          </div>
-                        
-                          <div class="col-md-3">
-                            <label class="radio-likert-right">Extremely original</label>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- practicality -->
-                      <div class="form-group">
-                        <div class="row">
-                          <div class="col-md-3">
-                            <label class="radio-likert-left">Not practical at all</label>
-                          </div>
-
-                          <div class="col-md-5">
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsPrac" id="inlineRadio1" value="option1"> 1
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsPrac" id="inlineRadio2" value="option2"> 2
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsPrac" id="inlineRadio3" value="option3"> 3
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsPrac" id="inlineRadio4" value="option4"> 4
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsPrac" id="inlineRadio5" value="option5"> 5
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsPrac" id="inlineRadio6" value="option6"> 6
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsPrac" id="inlineRadio7" value="option7"> 7
-                            </label>
-                          </div>
-                        
-                          <div class="col-md-3">
-                            <label class="radio-likert-right">Extremely practical</label>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- beneficial -->
-                      <div class="form-group">
-                        <div class="row">
-                          <div class="col-md-3">
-                            <label class="radio-likert-left">Not beneficial at all</label>
-                          </div>
-
-                          <div class="col-md-5">
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio1" value="option1"> 1
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio2" value="option2"> 2
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio3" value="option3"> 3
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio4" value="option4"> 4
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio5" value="option5"> 5
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio6" value="option6"> 6
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio7" value="option7"> 7
-                            </label>
-                          </div>
-                        
-                          <div class="col-md-3">
-                            <label class="radio-likert-right">Extremely beneficial</label>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- impact -->
-                      <div class="form-group">
-                        <div class="row">
-                          <div class="col-md-3">
-                            <label class="radio-likert-left">Very negative impact</label>
-                          </div>
-
-                          <div class="col-md-5">
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio1" value="option1"> -3
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio2" value="option2"> -2
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio3" value="option3"> -1
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio4" value="option4"> 0
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio5" value="option5"> 1
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio6" value="option6"> 2
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptionsBene" id="inlineRadio7" value="option7"> 3
-                            </label>
-                          </div>
-                        
-                          <div class="col-md-3">
-                            <label class="radio-likert-right">Very positive impact</label>
-                          </div>
-                        </div>
-                      </div>
-
-                      <button type="submit" class="btn btn-default">Submit</button>
-                      <button class="btn btn-default pull-right">I'm Done</button>
-                      <button class="btn btn-default pull-right" style="margin-right: 10px;">Skip</button>
-                    </form>
-                  </div>
-                </div> <!-- .panel -->
-              </div> <!-- .well -->
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button class="btn btn-success pull-right">I'm Done</button>
+                </form>
+              </div>
             </div>
 
-            <!-- build -->
-            <div role="tabpanel" class="tab-pane" id="build">
-              <div class="well">
-                <div class="row">
-                  <div class="col-md-3">
-                    <img class="img-responsive" src="assets/design-header.jpg"></img>
-                  </div>
-                  <div class="col-md-9">
-                    <h2 style="margin-top: 0;">
-                    Idea: Tower
-                    <button class="btn btn-default pull-right">Switch idea</button>
-                    </h2>
-                    <p>About the idea...Meantime, Fedallah was calmly eyeing the right whale's head, and ever and anon glancing from the deep wrinkles there to the lines in his own hand. And Ahab chanced so to stand, that the Parsee occupied his shadow; while, if the Parsee's shadow was there at all it seemed only to blend with, and lengthen Ahab's. As the crew toiled on, Laplandish speculations were bandied among them, concerning all these passing things.</p>
-                  </div>
-                </div> <!-- .row -->
-                
-              
-                <div class="panel panel-default" style="margin-top: 20px; margin-bottom: 0;">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                      Improve the Idea
-                    </div>
-                  </div>
-                  <div class="panel-body">
-                    <h4 style="margin-top: 0;">Reference: Project Goal</h4>
-                    <p>
-                      About the idea...Meantime, Fedallah was calmly eyeing the right whale's head, and ever and anon glancing from the deep wrinkles there to the lines in his own hand. And Ahab chanced so to stand, that the Parsee occupied his shadow; while, if the Parsee's shadow was there at all it seemed only to blend with, and lengthen Ahab's. As the crew toiled on, Laplandish speculations were bandied among them, concerning all these passing things.
-                    </p>
-                  </div>
-                  <!-- List group -->
-                  <ul class="list-group">
-                    <li class="list-group-item">
-                      <form>
-                       <div class="form-group">
-                          <label class="instruction" for="submissionText">Improve the current idea by suggesting changes or additions so that it supports the above project goal.</label>
-                          <textarea class="form-control" rows="3" id="submissionText"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                        <button class="btn btn-default pull-right">Skip</button>
-                      </form>
-                    </li>
-                  </ul> <!-- list group -->
-                </div> <!-- .panel -->
-              </div> <!-- .well -->
+          </div> <!-- .col-sm-6 col-md-4 -->
+        </div> <!-- .row -->
 
-              <div style="margin-top: 200px;"></div>
+      </div> <!-- .tab-content -->
 
-              <div class="well">
-                <div class="row">
-                  <div class="col-md-3">
-                    <img class="img-responsive" src="assets/design-header.jpg"></img>
-                  </div>
-                  <div class="col-md-9">
-                    <h2 style="margin-top: 0;">
-                    Idea: Tower
-                    <button class="btn btn-default pull-right">Switch idea</button>
-                    </h2>
-                    <p>About the idea...Meantime, Fedallah was calmly eyeing the right whale's head, and ever and anon glancing from the deep wrinkles there to the lines in his own hand. And Ahab chanced so to stand, that the Parsee occupied his shadow; while, if the Parsee's shadow was there at all it seemed only to blend with, and lengthen Ahab's. As the crew toiled on, Laplandish speculations were bandied among them, concerning all these passing things.</p>
-                  </div>
-                </div> <!-- .row -->
-              
-                <div class="panel panel-default" style="margin-top: 20px; margin-bottom: 0;">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                      Improve the Idea
-                    </div>
-                  </div>
-                  <div class="panel-body">
-                    <h4 style="margin-top: 0;">Reference: Design Guideline</h4>
-                    <p>
-                      <strong>City of San Diego General Plan</strong>
-                    </p>
-                    <p>
-                      Compact and walkable mixed-use villages of different scales within communities
-                    </p>
-                  </div>
-                  <!-- List group -->
-                  <ul class="list-group">
-                    <li class="list-group-item">
-                      <form>
-                       <div class="form-group">
-                          <label class="instruction" for="submissionText">How does this idea contradict or support the above guideline?</label>
-                          <textarea class="form-control" rows="3" id="submissionText"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                        <button class="btn btn-default pull-right">Skip</button>
-                      </form>
-                    </li>
-                  </ul> <!-- list group -->
-                </div> <!-- .panel -->
-              </div> <!-- .well -->
-            </div> <!-- .tab-pane --> 
-
-            <!-- submit -->
-            <div role="tabpanel" class="tab-pane" id="submit">
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <div class="panel-title">
-                        Submit an Idea
-                      </div>
-                    </div>
-                    <div class="panel-body">
-                      <form>
-                        <div class="form-group">
-                          <label class="instruction" for="submissionText">What would you like to see or do at El Nudillo, the intersection of 14th Street and National Avenue?</label>
-                          <textarea class="form-control" rows="3" id="submissionText"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                      </form>
-                    </div>
-                  </div>
-
-                </div> <!-- .col-sm-6 col-md-4 -->
-              </div> <!-- .row -->
-            </div> <!-- .tab-pane --> 
-
-          </div> <!-- .tab-content -->
-
-        </div> <!-- #feedback -->
-      </div> <!-- .col -->
-
-    </div> <!-- .row -->
+    </div> <!-- #feedback -->
 
 <!-- Scripts -->
 <script src="./mt070517_files/app.js"></script>
